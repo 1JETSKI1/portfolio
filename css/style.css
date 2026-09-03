@@ -132,3 +132,21 @@ nav {
   color: #cccccc;
   font-size: 0.95rem;
 }
+
+#about {
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 0 2rem;  
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+about p{
+  font-size: 1.05rem;
+  color: #cccccc;
+  line-height: 1.7;
+}
