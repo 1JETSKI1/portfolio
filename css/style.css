@@ -27,11 +27,11 @@ a {
   text-decoration: none;
 }
 
-header{
+header {
   padding: 1.5rem 2rem;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,23 +39,96 @@ nav{
   margin: 0 auto;
 }
 
-.logo{
+.logo {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-text);
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   gap: 2rem;
 }
 
-.nav-links a{
+.nav-links a {
   font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
   color: var(--color-accent);
 }
 
+#hero {
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#hero p {
+  font-size: 1.15rem;
+  color: #cccccc;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #111111;
+  padding: 00.75rem 1.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+#work {
+  max-width: 1100px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+#work h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.work-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.work-image {
+  aspect-ratio: 16 / 10;
+  background-color: #262626;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.work-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-card p{
+  color: #cccccc;
+  font-size: 0.95rem;
+}
