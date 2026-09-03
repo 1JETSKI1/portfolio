@@ -25,7 +25,7 @@
           I'm Mik — I build clean, fast, custom websites for businesses that
           want to stand out.
         </p>
-        <a href="#contact" class="cta-button">Let's work together</a>
+        <a href="#contact" class="btn">Let's work together</a>
       </section>
 
       <section id="work">
@@ -34,7 +34,10 @@
           <div class="work-card">
             <div class="work-image"></div>
             <h3>Project coming soon</h3>
-            <p>A new project is in the works! Check back soon to see what I've been working on.</p>
+            <p>
+              A new project is in the works! Check back soon to see what I've
+              been working on.
+            </p>
           </div>
         </div>
       </section>
@@ -42,15 +45,35 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I'm a passionate web designer with a focus on creating beautiful, functional websites that help businesses thrive online.
+          I'm a passionate web designer with a focus on creating beautiful,
+          functional websites that help businesses thrive online.
         </p>
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Have a project in mind? Let's work together!
-        </p>
+        <div class="contact-content">
+          <h2>Lets work together</h2>
+          <p>Have a project in mind? Let's work together!</p>
+          <form
+            action="https://formspree.io/f/xljenvan"
+            method="POST"
+            class="contact-form"
+          >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
 
