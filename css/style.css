@@ -82,6 +82,12 @@ nav {
   margin-bottom: 2rem;
 }
 
+.hero-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #999999;
+}
+
 .btn {
   display: inline-block;
   background-color: var(--color-accent);
@@ -94,6 +100,18 @@ nav {
 
 .btn:hover {
   opacity: 0.85;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid #333333;
+}
+
+.btn-outline:hover {
+  opacity: 1;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .grid-section {
@@ -135,6 +153,121 @@ nav {
 .work-card p {
   color: #cccccc;
   font-size: 0.95rem;
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card {
+  position: relative;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pricing-card.featured {
+  border-color: var(--color-accent);
+}
+
+.pricing-card .badge {
+  position: absolute;
+  top: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-accent);
+  color: #111111;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+.pricing-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.pricing-card .price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card .price span,
+.maintenance-price .price span {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #999999;
+}
+
+.pricing-card .price-note {
+  color: #cccccc;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.maintenance-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.maintenance-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.maintenance-card p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  max-width: 420px;
+}
+
+.maintenance-price {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.maintenance-price .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+#cta {
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+#cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#cta p {
+  color: #cccccc;
+  margin-bottom: 2rem;
 }
 
 #about {
@@ -203,23 +336,40 @@ nav {
 }
 
 footer {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-top: 1px solid #262626;
   color: #999999;
   font-size: 0.9rem;
+  margin-top: 6rem;
 }
 
-.footer-links {
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer-brand .logo {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.footer-content h4 {
+  color: var(--color-text);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-contact,
+.footer-menu {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-.footer-links a:hover {
+.footer-content a:hover {
   color: var(--color-accent);
 }
 
@@ -241,9 +391,22 @@ footer {
     font-size: 1rem;
   }
 
-  footer {
+  .maintenance-card {
     flex-direction: column;
-    gap: 1rem;
     text-align: center;
+  }
+
+  .maintenance-card p {
+    max-width: none;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-contact,
+  .footer-menu {
+    align-items: center;
   }
 }
