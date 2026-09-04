@@ -59,6 +59,11 @@ nav {
   color: var(--color-accent);
 }
 
+.nav-links a.active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
 #hero {
   max-width: 700px;
   margin: 6rem auto;
@@ -91,13 +96,13 @@ nav {
   opacity: 0.85;
 }
 
-#work {
+.grid-section {
   max-width: 1100px;
   margin: 6rem auto;
   padding: 0 2rem;
 }
 
-#work h2 {
+.grid-section h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
