@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products | Mik de Looij</title>
+    <title data-i18n="meta.title.products">Producten | Mik de Looij</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -11,25 +11,29 @@
       <nav>
         <a href="index.html" class="logo">Mik de Looij</a>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html" class="active">Products</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" class="active" data-i18n="nav.products">Producten</a></li>
+          <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Over mij</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <li class="lang-switch">
+            <button type="button" class="lang-btn" data-lang="nl">NL</button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="products" class="grid-section">
-        <h2>Products</h2>
+        <h2 data-i18n="products.heading">Producten</h2>
         <div class="work-grid">
           <div class="work-card">
             <div class="work-image"></div>
-            <h3>Product coming soon</h3>
-            <p>
-              I'm putting together my first product. Check back soon to see
-              what's available.
+            <h3 data-i18n="products.comingSoon.title">Product komt binnenkort</h3>
+            <p data-i18n="products.comingSoon.text">
+              Ik ben bezig met mijn eerste product. Kom snel terug om te zien
+              wat er beschikbaar is.
             </p>
           </div>
         </div>
@@ -40,22 +44,27 @@
       <div class="footer-content">
         <div class="footer-brand">
           <a href="index.html" class="logo">Mik de Looij</a>
-          <p>&copy; 2026 Mik de Looij. All rights reserved.</p>
+          <p>
+            &copy; 2026 Mik de Looij.
+            <span data-i18n="footer.rights">Alle rechten voorbehouden.</span>
+          </p>
         </div>
         <div class="footer-contact">
-          <h4>Contact</h4>
-          <a href="mailto:info@mikdelooij.com">info@mikdelooij.com</a>
+          <h4 data-i18n="footer.contactHeading">Contact</h4>
+          <a href="mailto:info@mikdelooij.com"
+            ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22 6 12 13 2 6"></polyline></svg>info@mikdelooij.com</a
+          >
           <a href="https://wa.me/316XXXXXXXX" target="_blank"
-            >+31 6 XXX XXXXX (WhatsApp)</a
+            ><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+31 6 XXX XXXXX (WhatsApp)</a
           >
         </div>
         <div class="footer-menu">
-          <h4>Menu</h4>
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <h4 data-i18n="footer.menuHeading">Menu</h4>
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="products.html" data-i18n="nav.products">Producten</a>
+          <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="about.html" data-i18n="nav.about">Over mij</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </div>
       </div>
     </footer>
