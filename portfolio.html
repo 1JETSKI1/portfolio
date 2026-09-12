@@ -4,12 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="meta.title.portfolio">Portfolio | TheLooij</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="index.html" class="logo">TheLooij</a>
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">TL</span>
+          <div class="brand-text">
+            <a href="index.html" class="logo">TheLooij</a>
+            <span class="tagline">Webdesign</span>
+          </div>
+        </div>
         <ul class="nav-links">
           <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="products.html" data-i18n="nav.products">Producten</a></li>
@@ -44,7 +56,10 @@
     <footer>
       <div class="footer-content">
         <div class="footer-brand">
-          <a href="index.html" class="logo">TheLooij</a>
+          <div class="brand">
+            <span class="brand-mark brand-mark-sm" aria-hidden="true">TL</span>
+            <a href="index.html" class="logo">TheLooij</a>
+          </div>
           <p>
             &copy; 2026 TheLooij.
             <span data-i18n="footer.rights">Alle rechten voorbehouden.</span>
