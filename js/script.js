@@ -1,11 +1,11 @@
 (function () {
   var translations = {
     nl: {
-      "meta.title.home": "Mik de Looij | Webdesigner",
-      "meta.title.about": "Over mij | Mik de Looij",
-      "meta.title.contact": "Contact | Mik de Looij",
-      "meta.title.portfolio": "Portfolio | Mik de Looij",
-      "meta.title.products": "Producten | Mik de Looij",
+      "meta.title.home": "TheLooij | Webdesigner",
+      "meta.title.about": "Over mij | TheLooij",
+      "meta.title.contact": "Contact | TheLooij",
+      "meta.title.portfolio": "Portfolio | TheLooij",
+      "meta.title.products": "Producten | TheLooij",
 
       "nav.home": "Home",
       "nav.products": "Producten",
@@ -67,11 +67,11 @@
       "footer.menuHeading": "Menu",
     },
     en: {
-      "meta.title.home": "Mik de Looij | Web Designer",
-      "meta.title.about": "About | Mik de Looij",
-      "meta.title.contact": "Contact | Mik de Looij",
-      "meta.title.portfolio": "Portfolio | Mik de Looij",
-      "meta.title.products": "Products | Mik de Looij",
+      "meta.title.home": "TheLooij | Web Designer",
+      "meta.title.about": "About | TheLooij",
+      "meta.title.contact": "Contact | TheLooij",
+      "meta.title.portfolio": "Portfolio | TheLooij",
+      "meta.title.products": "Products | TheLooij",
 
       "nav.home": "Home",
       "nav.products": "Products",
