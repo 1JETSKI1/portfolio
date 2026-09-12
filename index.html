@@ -26,6 +26,11 @@
 
     <main>
       <section id="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <span class="blob blob-1"></span>
+          <span class="blob blob-2"></span>
+          <span class="blob blob-3"></span>
+        </div>
         <h1 data-i18n="hero.heading">
           Webdesign dat kleine bedrijven online laat stralen.
         </h1>
@@ -40,7 +45,8 @@
       <section id="services" class="grid-section">
         <h2 data-i18n="services.heading">Mijn Diensten</h2>
         <div class="pricing-grid">
-          <div class="pricing-card">
+          <div class="pricing-card featured">
+            <span class="badge" data-i18n="services.basic.badge">Populair</span>
             <h3 data-i18n="services.basic.title">Basic</h3>
             <p class="price">
               <span data-i18n="services.basic.priceFrom">Vanaf</span>
@@ -50,12 +56,11 @@
             <p class="price-note" data-i18n="services.basic.note">
               Ideaal om mee te starten
             </p>
-            <a href="contact.html" class="btn btn-outline" data-i18n="services.cta"
+            <a href="contact.html" class="btn" data-i18n="services.cta"
               >Aan de slag</a
             >
           </div>
-          <div class="pricing-card featured">
-            <span class="badge" data-i18n="services.premium.badge">Populair</span>
+          <div class="pricing-card">
             <h3 data-i18n="services.premium.title">Premium</h3>
             <p class="price">
               <span data-i18n="services.premium.priceFrom">Vanaf</span>
@@ -65,7 +70,7 @@
             <p class="price-note" data-i18n="services.premium.note">
               Voor bedrijven die meer willen
             </p>
-            <a href="contact.html" class="btn" data-i18n="services.cta">Aan de slag</a>
+            <a href="contact.html" class="btn btn-outline" data-i18n="services.cta">Aan de slag</a>
           </div>
         </div>
 
